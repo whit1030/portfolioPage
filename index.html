@@ -5,26 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikolai Whittaker</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- google fonts link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- flickity carousel link -->
+
+
+
 </head>
 <body>
-    
-    <nav id="navbar">
-    <a href="#About">About</a>
-    <a href="#Portfolio">Portfolio</a>
-    <a href="#Contact">Contact</a>
-    </nav>
 
-    <header>
-        <h1>Nikolai Whittaker,</h1>
-        <h2>Aspring Web Developer.</h2>
-        <p>Old Standard was designed by Alexey Kryukov. It reproduces a specific type of modern style of serif typefaces. </p>
+    <header id="Header">
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div id="head-div">
+            <span class="arrow" data-jam="arrow-down" data-fill="#FFF"></span>    
+            <h2 class="header-2">Nikolai Whittaker</h1>
+            <h1 class="header-1">Web Developer</h2>   
+        </div>
+
     </header>
-    <main>
-        <h1>Projects.</h1>
-        <h2>Project One.</h2>
-        <p>Old Standard was designed by Alexey Kryukov. It reproduces a specific type of modern style of serif typefaces. </p>
+
+    <main id="Portfolio">
+        <h1 class="body-h1">Projects</h1>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+
+             <div class="carousel-cell">
+                 <div class="image-container">
+                    <div class="image-div project-1-picture">
+                        <div class="cd-effect"></div>
+                    </div>
+                </div>
+                <h2 class="body-h2">Project One.</h2>
+                <p class="body-subhead">HTML,CSS,JavaScript</p>
+                <p p class="body-p">Old Standard was designed by Alexey Kryukov. It reproduces a specific type of modern style of serif typefaces. </p>
+                <div class="portfolio-a-container">
+                    <a href="#Demo">Demo</a>
+                    <a href="#Repo">Repository</a>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div class="image-container">
+                   <div class="image-div project-2-picture">
+                       <div class="cd-effect"></div>
+                   </div>
+               </div>
+               <h2 class="body-h2">Project One.</h2>
+               <p class="body-subhead">HTML,CSS,JavaScript</p>
+               <p class="body-p">Old Standard was designed by Alexey Kryukov. It reproduces a specific type of modern style of serif typefaces. </p>
+               <div class="portfolio-a-container">
+                <a href="#Demo">Demo</a>
+                <a href="#Repo">Repository</a>
+            </div>
+           </div>
+
+
+            <div class="carousel-cell">
+                <div class="image-container">
+                    <div class="image-div project-3-picture">
+                        <div class="cd-effect"></div>
+                    </div>
+                </div>
+                <h2 class="body-h2">Project Two.</h2>
+                <p class="body-subhead">HTML,CSS,JavaScript</p>
+                <p p class="body-p">Old Standard was designed by Alexey Kryukov. It reproduces a specific type of modern style of serif typefaces. </p>
+                <div class="portfolio-a-container">
+                    <a href="#Demo">Demo</a>
+                    <a href="#Repo">Repository</a>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
-    <footer></footer>
-    <script src="scripts.js"></script>
+    <footer id="Contact">
+        <h1 class="footer-h1">Contact</h1>
+
+        <div class="footer-flex-container">
+            <div class="foot-sub-container">
+                <div class="icon-div"><a href="mailto:nikolai.whitt@gmail.com"><img src="../resources/Mail-595b40b75ba036ed117d6629.svg" alt="Email Icon"></a></div>
+                <div class="text-div"><a href="mailto:nikolai.whitt@gmail.com">Email</a></div>
+            </div>
+            <div class="foot-sub-container">
+                <div class="text-div"><a href="#github">Github</a></div>
+                <div class="icon-div"><img src="../resources/github.svg" alt="github Icon"></div>
+            </div>
+            <div class="foot-sub-container">
+                <div class="icon-div"><img src="../resources/linkedin.svg" alt="linkdin icon" id="linkdin-svg"></div>
+                <div class="text-div"><a href="#linkdin">Linkdin</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/jam-icons/js/jam.min.js"></script>
+    <!-- icon package link -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- flickity carousel script link -->
+
+
 </body>
 </html>
