@@ -41,7 +41,7 @@ p{
 }
 header{
     text-align: center;
-    background-image: url(../resources/pexels-gryffyn-m-5290758.jpg);
+    background-image: url(./resources/pexels-gryffyn-m-5290758.jpg);
     background-position: center;
     background-size: cover;
     height: 94vh;
@@ -142,7 +142,7 @@ main img{
   } */
   .image-div{
     background-color: #fdfdfd;
-    background-image: url(../resources/pexels-gryffyn-m-5290758.jpg);
+    background-image: url(./resources/pexels-gryffyn-m-5290758.jpg);
     height: 300px;
     width: 300px;
     border-radius: 50%;
