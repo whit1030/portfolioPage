@@ -49,7 +49,7 @@ header{
     border: none;
 }
 .header-1 {
-    opacity: 0;
+    
     font-size: 45px;
     color: whitesmoke;
     font-weight: bold;
@@ -58,15 +58,42 @@ header{
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-bottom: 0px;
-    animation-name: load-fade-in;
+    /* animation-name: appearin; */
     animation-duration: 4s;
-    animation-iteration-count: 1;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-
+    animation-iteration-count: 1;
+    /* transform: rotate3d(1,0,0, +90deg); */
+    animation-timing-function: ease-out;
+    animation-name: popuzp;
+    transform: translateY(+200%);
+    opacity: 0;
+}
+@keyframes popuzp{
+    0%{
+        transform: translateY(0); opacity: 0;
+    } 
+        50% {transform: translateY(-50%); opacity: 1}
+    %80{
+        transform: translateY(10%);opacity: 1;
+    } 100%{
+        transform: translateY(0); opacity: 1;
+    }
+}
+@keyframes appearin {
+    0%{
+        
+        transform: rotate3d(1,0,0, +90deg);
+    }
+    15%{ transform: rotate3d(1,0,0, +65deg); 
+    }
+    100%{
+        transform: rotate3d(1,0,0, 0deg); 
+        opacity: 1;
+    }
 }
 .header-2 {
-    opacity: 0;
+    margin-left: -800px;
     text-align: left;
     font-size: 18px;
     font-weight: black;
@@ -74,10 +101,17 @@ header{
     letter-spacing: 2px;
     color: #A8A8A8;
     text-decoration: none;
-    animation-name: load-fade-in;
+    animation-name: slidein;
     animation-duration: 2s;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
 }
 #head-div{
     display: flex;
@@ -259,4 +293,17 @@ address a{
     } 100%{
         opacity: 1;
     }
+}
+
+@keyframes arrow-bob{
+    25%{
+        tra
+    }
+} 
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
 }
