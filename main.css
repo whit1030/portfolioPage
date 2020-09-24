@@ -59,15 +59,20 @@ header{
     letter-spacing: 8px;
     margin-bottom: 0px;
     /* animation-name: appearin; */
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     /* transform: rotate3d(1,0,0, +90deg); */
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     animation-name: popuzp;
     transform: translateY(+200%);
     opacity: 0;
+}
+@keyframes arrow-bob{
+    25%{
+
+    }
 }
 @keyframes popuzp{
     0%{
