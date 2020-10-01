@@ -7,72 +7,85 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- google fonts link -->
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css"></script>
 
 
 </head>
 <body>
-<div id="flex-container">
-    <header id="Header" class="page-layout">
+<div id="fullpage">
+    <div class="section">
+        <header id="Header" class="page-layout">
         
 
-        <div class="head-div" id="Home"> 
-            <div class="text-container">
-                <h1>Nikolai Whittaker</h1>
-                <h2>Web Developer</h2>
-            </div>   
-            <hr class="title-hr">
-        </div>
-        <div id="head-text" class="text-div">
-            <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
-        </div> 
-
-        <nav id="navbar">
-            <a href="#">1</a>
-            <hr class="nav-hr">
-            <a href="#Portfolio-1">2</a>
-            <hr class="nav-hr">
-            <a href="#Portfolio-2">3</a>
-        </nav>
-
-    </header>
-
-    <main id="Portfolio">
-    <div class="portfolio-div page-layout">
-        <div class="head-div portfolio-1">
-            <div class="text-container"> 
-                <h1>Pxssionfruit</h1>
-                <h2>Music Blog</h2>   
+            <div class="head-div" id="Home"> 
+                <div class="text-container">
+                    <h1>Nikolai Whittaker</h1>
+                    <h2>Web Developer</h2>
+                </div>   
+                <hr class="title-hr">
             </div>
-            <hr class="title-hr">
+    
+            <div id="head-text" class="text-div">
+                <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
+            </div> 
+    
+            <nav id="navbar">
+                <a href="#">1</a>
+                <hr class="nav-hr">
+                <a href="#Portfolio-1">2</a>
+                <hr class="nav-hr">
+                <a href="#Portfolio-2">3</a>
+            </nav>
+    
+    </header>
+    </div>
+    <div class="section" id="Portfolio-1">
+        <div class="portfolio-div page-layout">
+            <div class="head-div portfolio-1">
+                <div class="text-container"> 
+                    <h1>Pxssionfruit</h1>
+                    <h2>Music Blog</h2>   
+                </div>
+                <hr class="title-hr">
+            </div>
+                <div id="head-text" class="text-div">
+                    <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
+                </div>
+            
         </div>
+    </div>
+    <div class="section">
+        <div class="portfolio-div page-layout" id="Portfolio-2">
+            <div class="head-div portfolio-2">
+                <div class="text-container"> 
+                <h1>Wearther</h1>
+                <h2>What to Wear by Weather</h2>   
+                </div>
+            <hr class="title-hr">
+            </div>
+            
             <div id="head-text" class="text-div">
                 <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
             </div>
-        
+        </div>
     </div>
+</div>
 
-    <div class="portfolio-div page-layout">
-        <div class="head-div portfolio-2">
-            <div class="text-container"> 
-            <h1>Wearther</h1>
-            <h2>What to Wear by Weather</h2>   
-            </div>
-        <hr class="title-hr">
-        </div>
-        
-        <div id="head-text" class="text-div">
-            <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
-        </div>
-    </div>
-</main>    
-        
+
+
+
+   
+     <script src="./scripts.js"></script>   
     <script src="https://unpkg.com/jam-icons/js/jam.min.js"></script>
     <!-- icon package link -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- flickity carousel script link -->
-
-
+    <Script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></Script>
+    <script>var myFullpage =new fullpage('#fullpage', {
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true
+    });</script>
 </body>
 </html>
