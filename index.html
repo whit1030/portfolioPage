@@ -13,6 +13,13 @@
 
 </head>
 <body>
+    <nav id="navbar">
+        <a href="">1</a>
+        <hr class="nav-hr">
+        <a href="#Portfolio1">2</a>
+        <hr class="nav-hr">
+        <a href="#Portfolio2">3</a>
+    </nav>
 <div id="fullpage">
     <div class="section">
         <header id="Header" class="page-layout">
@@ -30,13 +37,13 @@
                 <p>Yevgeniy (Jim) Brikman loves programming, writing, speaking, traveling, and lifting heavy things. He does not love talking about himself in the 3rd person. He is the co-founder of Gruntwork, a company that provides DevOps as a Service. </p>
             </div> 
     
-            <nav id="navbar">
+            <!-- <nav id="navbar">
                 <a href="#">1</a>
                 <hr class="nav-hr">
                 <a href="#Portfolio-1">2</a>
                 <hr class="nav-hr">
                 <a href="#Portfolio-2">3</a>
-            </nav>
+            </nav> -->
     
     </header>
     </div>
@@ -85,7 +92,8 @@
     <script>var myFullpage =new fullpage('#fullpage', {
         //options here
         autoScrolling:true,
-        scrollHorizontally: true
+        scrollHorizontally: true,
+        anchors:['Home','Portfolio1','Portfolio2']
     });</script>
 </body>
 </html>

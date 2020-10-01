@@ -56,6 +56,7 @@ hr{
     justify-content: center;
     position: fixed !important;
     right: 10%;
+    z-index: 10;
 }
 .text-container{
     text-align: right;
@@ -93,19 +94,19 @@ hr{
     padding-top: 10px;
     
 }
-#navbar a:active{
+#navbar a:focus{
     color: var(--main-font-color);
 }
 .portfolio-div{
     height: 95vh;
 }
 
-.portfolio-1{
+/* .portfolio-1{
     padding-left: 140px;
 }
 .portfolio-2{
     padding-left: 190px;
-}
+} */
 #Portfolio-2{
     padding-bottom: 60px;
 }
