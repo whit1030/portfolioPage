@@ -1,7 +1,20 @@
 
-html{
+:root{
     font-family: 'Roboto', sans-serif;
-    
+    background-color: #161616;
+    --main-font-color: #e7e7e7;
+    --secondary-font-color : #d8d8d8;
+    --hr-main-color : #6b6b6b;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Open-Sans', sans-serif;
+}
+body{
+    color: var(--main-font-color);
+}
+
+h1{
+    font-size: 62px;
+    font-weight: 400;
 }
 
 
@@ -10,4 +23,86 @@ hr{
     height: 100px;
     width: 2px;
     border: none;
+    margin: 0;
+}
+#Header{
+    background-image: url(./resources/pexels-steve-johnson-2130475.jpg)/* Photo by Steve Johnson from Pexels */
+}
+.page-layout{ ; 
+     background-position: center;
+     background-size: cover;
+     height: 95vh;
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-top: 25px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.head-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
+}
+#navbar{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10%;
+}
+.text-container{
+    text-align: right;
+}
+.text-container h1{
+    letter-spacing: -2px;
+}
+.text-container h2{
+    font-weight: 400;
+    color: #fc82ff;
+    letter-spacing: -2px;
+}
+.title-hr{
+    height: 200px;
+    margin-left: 20px;
+    background-color: var(--hr-main-color);
+    position: fixed;
+    left: 35%;
+}
+.text-div{
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 10%;
+}
+.nav-hr{
+    height: 266px;
+    margin: 0 auto;
+    background-color: var(--hr-main-color);
+}
+#navbar a {
+    text-decoration: none;
+    color: var(--hr-main-color);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+#navbar a:active{
+    color: var(--main-font-color);
+}
+.portfolio-div{
+    height: 95vh;
+}
+
+.portfolio-1{
+    padding-left: 140px;
+}
+.portfolio-2{
+    padding-left: 190px;
 }
