@@ -17,7 +17,12 @@ h1{
     font-weight: 400;
 }
 
-
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    position: fixed;
+}
 hr{
     background: white;
     height: 100px;
@@ -31,10 +36,10 @@ hr{
 .page-layout{ 
      background-position: center;
      background-size: cover;
-     height: 95vh;
-     margin-left: 5%;
-     margin-right: 5%;
-     margin-top: 25px;
+     height: 800px;
+     max-width: 1300px;
+     margin: auto;
+     margin-top: 2%;
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -50,6 +55,7 @@ hr{
 }
 #navbar{
     height: 90%;
+    top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +79,6 @@ hr{
     height: 200px;
     margin-left: 20px;
     background-color: var(--hr-main-color);
-    position: fixed;
     left: 35%;
 }
 .text-div{
@@ -98,15 +103,7 @@ hr{
     color: var(--main-font-color);
 }
 .portfolio-div{
-    height: 95vh;
+    /* height: 95vh; */
+    background-color: #252525;
 }
 
-/* .portfolio-1{
-    padding-left: 140px;
-}
-.portfolio-2{
-    padding-left: 190px;
-} */
-#Portfolio-2{
-    padding-bottom: 60px;
-}
