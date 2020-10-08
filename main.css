@@ -1,27 +1,53 @@
 
 :root{
     font-family: 'Roboto', sans-serif;
-    background-color: #161616;
-    --main-font-color: #e7e7e7;
-    --secondary-font-color : #d8d8d8;
+    background-color: #e7e7e7;
+    --main-font-color: #000001;
+    --secondary-font-color : #e7e7e7;
     --hr-main-color : #6b6b6b;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Open-Sans', sans-serif;
 }
 body{
     color: var(--main-font-color);
+    margin: 0;
 }
-
-h1{
-    font-size: 62px;
-    font-weight: 400;
-}
-
-#particles-js{
-    height: 100vh;
-    width: 100%;
-    background-color: #161616;
+#website-title{
+    transform: rotate(-90deg);
+    font-size: 24px;
     position: fixed;
+    left: 117px;
+    top: 132px;
+    z-index: 1;
+    
+}
+.text-container h1 {
+    font-size: 82px;
+    text-align: right; 
+    
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./resources/pexels-karolina-grabowska-4022210.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.icon-circle{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 hr{
     background: white;
@@ -31,28 +57,79 @@ hr{
     margin: 0;
 }
 #Header{
-    background-image: url(./resources/pexels-steve-johnson-2130475.jpg)/* Photo by Steve Johnson from Pexels */
+    color: var(--secondary-font-color);
+    width: 100%;
+    height: 100vh;
 }
+
 .page-layout{ 
+    color: var(--secondary-font-color);
      background-position: center;
      background-size: cover;
      height: 800px;
-     max-width: 1300px;
-     margin: auto;
-     margin-top: 2%;
+     /* max-width: 1300px; */
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
 }
-.head-div{
+.splash-title-div{
+    background-color: rgba(0,34,66,0.97);
+    color: #FF8B8B;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2.5%;
+    
+}
+#splash-text-div{
+    height: 100vh;
+    background-color: rgba(250, 250, 250, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2.5%;
+    width: 50%;
+
+}
+#splash-text-div p{
+    max-width: 60%;
+    color: var(--main-font-color);
+    font-size: 18px;
+    line-height: 200%;
+}
+.light-text{
+    font-weight: 100;
+}
+#github-email{
+    width: 100vw;
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    
+    z-index: 10;
 }
+#github-email a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--main-font-color);
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 15px;
+
+}
+.top-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 #navbar{
     height: 90%;
     top: 5%;
@@ -64,27 +141,23 @@ hr{
     right: 10%;
     z-index: 10;
 }
-.text-container{
-    text-align: right;
-}
-.text-container h1{
-    letter-spacing: -2px;
-}
 .text-container h2{
+    font-size: 22px;
     font-weight: 400;
     color: #fc82ff;
-    letter-spacing: -2px;
+
 }
 .title-hr{
-    height: 200px;
+    height: 240px;
     margin-left: 20px;
     background-color: var(--hr-main-color);
     left: 35%;
+    width: 1px;
 }
 .text-div{
-    width: 50%;
     margin-left: 20px;
     margin-right: 10%;
+    padding-left: 40px;
 }
 .nav-hr{
     height: 266px;
@@ -107,3 +180,9 @@ hr{
     background-color: #252525;
 }
 
+.portfolio-div{
+    background-image: url(./resources/xJKlgc7.png);
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.75);
+}
